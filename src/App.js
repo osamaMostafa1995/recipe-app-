@@ -20,7 +20,8 @@ function App() {
     )
       .then((response) => response.json())
       .then((data) => setRecipes(data.hits));
-  }, [query]);
+      console.log(recipes);
+  }, [query , recipes]);
   return (
     <div className="App">
       <div className="header-box ">
